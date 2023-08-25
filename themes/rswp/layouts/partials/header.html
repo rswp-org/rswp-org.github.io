@@ -1,0 +1,28 @@
+<header>
+    <div id="main-menu" class="nav">
+        <nav>
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}">
+                {{ $text := print .Name | safeHTML }}
+                {{ $text }}
+            </a>
+            {{ end }}
+        </nav>
+    </div>
+    <div id="mobile-menu" class="nav">
+        <input type="checkbox" id="hamburger-input"/>
+        <label id="hamburger-menu" for="hamburger-input" class="bi bi-three-dots-vertical">
+            <div id="sidebar-menu" class="nav">
+                <nav>
+                    {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}">
+                        {{ $text := print .Name | safeHTML }}
+                        {{ $text }}
+                    </a>
+                    {{ end }}
+                </nav>
+            </div>
+        </label>
+    </div>
+    <div class="overlay"></div>
+</header>

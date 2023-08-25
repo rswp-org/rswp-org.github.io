@@ -1,0 +1,128 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* 1. Base */
+
+html {
+    background-color: #FCFDFA;
+    color: #959798;
+    font-family: Seravek, sans-serif;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .nav {
+    align-items: center;
+    background-color: #4472C3;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.375rem 5vw;
+  }
+
+  #main-menu {
+    display: none;
+  }
+  #sideabar-menu ul {
+    padding-top: 4rem;
+  }
+  #sidebar-menu li {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  #hamburger-input{
+    display: none;
+  }
+  
+  .overlay{
+    background-color: #FCFDFA;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: opacity .35s, visibility .35s, height .35s;
+    visibility: hidden;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  #hamburger-menu {
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    position: fixed;
+    right: 2vw;
+  }
+  
+  #hamburger-menu #sidebar-menu {
+    box-sizing: border-box;
+    background-color: #FCFDFA;
+    color: #4472C3;
+    height: 100%;
+    left: -100vw;
+    opacity: 0.85;
+    padding: 8rem 4rem 10rem 4rem;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    width: 100%;
+  }
+  
+  #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+  }
+  #hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  }
+
+  .footer {
+    background-color: #4472C3;
+    bottom: 0px;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .social {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .social li {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 2rem;
+    margin-right: 0.5rem;
+    width: 2rem;
+  }
+
+  @media screen and (min-width: 800px) {
+    #hamburger-menu {
+      display: none;
+    }
+
+    #mobile-menu {
+      display: none;
+    }
+  
+    #main-menu{
+      display: flex;
+    }
+
+    .footer {
+      bottom: 0px;
+      padding: 2rem 8rem;
+    }
+  }
