@@ -1,4 +1,4 @@
-baseURL = 'http://rswp.org/'
+baseURL = 'https://rswp-org.github.io/rswp/'
 languageCode = 'en-us'
 title = 'rswp'
 sectionPagesMenu = 'main'
