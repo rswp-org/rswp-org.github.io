@@ -1,0 +1,6 @@
+baseURL = 'https://rswp.org/'
+languageCode = 'en-us'
+title = 'Rural Schools Water Project'
+sectionPagesMenu = 'main'
+theme = 'rswp'
+googleAnalytics = 'G-X7F6K93ZYZ'

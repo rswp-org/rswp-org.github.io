@@ -1,5 +1,0 @@
-baseURL = 'https://rswp-org.github.io/rswp.org/'
-languageCode = 'en-us'
-title = 'rswp'
-sectionPagesMenu = 'main'
-theme = 'rswp'

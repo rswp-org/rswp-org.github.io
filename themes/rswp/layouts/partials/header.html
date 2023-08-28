@@ -24,12 +24,16 @@
         <label id="hamburger-menu" for="hamburger-input" class="bi bi-three-dots-vertical">
             <div id="sidebar-menu" class="nav">
                 <nav>
-                    {{ range .Site.Menus.main }}
-                    <a href="{{ .URL }}">
-                        {{ $text := print .Name | safeHTML }}
-                        {{ $text }}
-                    </a>
-                    {{ end }}
+                    <ul>
+                        {{ range .Site.Menus.main }}
+                        <li>
+                            <a href="{{ .URL }}">
+                                {{ $text := print .Name | safeHTML }}
+                                {{ $text }}
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
                 </nav>
             </div>
         </label>
