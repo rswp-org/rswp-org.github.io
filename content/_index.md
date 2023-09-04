@@ -5,5 +5,3 @@ draft: false
 ---
 
 # 🔨 We are building water systems for primary schools in eastern Uganda. #
-
-

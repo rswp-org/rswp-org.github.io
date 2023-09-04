@@ -14,7 +14,7 @@ html {
 /* 2. Header */
 header {
   height: 4rem;
-  position: fixed;
+  position: relative;
   width: 100%;
 }
 a {
@@ -94,6 +94,9 @@ a {
   #main-menu{
     display: flex;
   }
+  .nav {
+    justify-content: space-between;
+  }
   #main-menu li {
     padding-left: 2rem;
   }
@@ -110,7 +113,68 @@ a {
   }
 }
 
-/* 3. Footer */
+/* 3. Content */
+#content {
+  padding: 2rem;
+}
+.button {
+  background-color: #44b8c3;
+  background-image: linear-gradient(to bottom right,#44b8c3, #4472c3);
+  border-radius: 290486px;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 1.25em 2em;
+  text-shadow: none;
+  transition-property: box-shadow, transform;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  align-items: center;
+  flex-grow: 0.5;
+  flex-shrink: 1;
+  text-align: center;
+  font-weight: 500;
+}
+.leader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+}
+.lead-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 26rem;
+}
+.side {
+  height: 100%;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 800px) {
+  .leader {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem;
+  }
+  .lead-content {
+    padding-right: 3rem;
+  }
+  .side {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    order: 2;
+    vertical-align: middle;
+    width: 20rem;
+  }
+}
+/* 4. Footer */
 .footer {
   background-color: #4472C3;
   color: #FFFFFF;
@@ -136,7 +200,7 @@ a {
   margin-right: 0.5rem;
   width: 2rem;
 }
-/* 3b. Desktop footer */
+/* 4b. Desktop footer */
 @media screen and (min-width: 800px) {
   .social {
     display: flex;
