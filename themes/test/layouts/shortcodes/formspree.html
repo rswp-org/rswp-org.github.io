@@ -1,0 +1,26 @@
+{{ $id := default "mleykvqa" (.Get 0) }}{{ $button_name := default "Submit" (.Get 1) }}{{ $redirect := .Get 2 }}
+<form action="https://formspree.io/f/{{ $id }}" method="POST">
+  <label for="name">name</label>
+  <input type="text" id="name">
+  <br>
+  <label for="email">email address</label>
+  <input type="email" id="email" placeholder="name@example.com">
+  <br>
+  <label for="category">choose a category</label>
+  <select name="category" id="category">
+    <option value="fundraising">fundraising</option>
+    <option value="events">events</option>
+    <option value="partner organisations">partner organisations</option>
+    <option value="volunteering">volunteering</option>
+    <option value="legal">legal</option>
+    <option value="governance">governance</option>
+    <option value="other">other</option>
+  </select>
+<br>
+  <label for="query">message</label>
+  <textarea id="query"></textarea>
+  {{.Inner}}
+  <div class="g-recaptcha" data-sitekey="6Lfq_RYpAAAAAMdWuKnilWFJNM1w-fPqlFudcYgW"></div>
+  <br>
+  <button type="submit">{{ $button_name }}</button>
+</form>

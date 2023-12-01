@@ -1,0 +1,28 @@
+{{ define "leader" }}
+{{ end }}
+{{ define "main" }}
+{{ .Content }}
+<!-- Ranges through content/team/*.md -->
+{{ .Page.Description }}
+<div class="container">
+    <div class="row">
+    {{ range .Pages.ByWeight }}
+        <div class="col">
+            <div class="card">
+            {{ $image := resources.Get .Params.image }}
+            {{ with $image }}
+            <img class="card-img" src="{{ $image.RelPermalink }}"></img>
+            {{ end }}
+                <div class="card-header">
+                    <a href="{{ .RelPermalink }}"><h1 style="font-weight: bold;">{{ .Page.Title }}</h1></a>
+                    <h2><em>{{ .Page.Description }}</em></h2>
+                </div>
+                <div class="card-body">
+                    <p>{{ .Page.Content | truncate 75 }}</p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
