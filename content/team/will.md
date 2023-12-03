@@ -9,6 +9,6 @@ weight: 100
 ---
 Hey! I’m Will and I have the privilege of leading our amazing board of trustees. 
 
-I’ve been part of RSWP since 2014 and - alongside my role as Chair - I’m also heavily involved in leading our projects and partnerships.
+I’ve been part of RSWP since 2014 and I’m heavily involved in leading our projects and partnerships.
 
-I’m currently working at Save the Children International and studying part-time as a graduate student at the Water Engineering and Development Centre (WEDC), Loughborough University.
+I work at Save the Children International and study part-time at the Water Engineering and Development Centre (WEDC), Loughborough University.
