@@ -1,31 +1,39 @@
 @font-face { 
-  font-family: 'MyFont'; 
+  font-family: 'ProximaNova-Regular'; 
   src: url('/ProximaNova-Regular.otf') format('opentype'); 
 } 
+@font-face { 
+  font-family: 'ProximaNova-Bold'; 
+  src: url(/ProximaNova-Bold.otf) format('opentype');
+}
+@font-face { 
+  font-family: 'ProximaNova-Black'; 
+  src: url(/ProximaNova-Black.otf) format('opentype');}
 html {
   background-color: white;
   color: #2c2c2c;
-  font-family: 'MyFont';
-  font-size: 16px;
+  font-family: 'ProximaNova-Regular';
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 } 
 body {
+  line-height: 1.5;
   margin: 0;
   min-height: 100vh;
-  line-height: 1.5;
 }
 .leader {
-  padding: 3vh;
+  padding: 8rem;
 }
 nav {
+  align-items: baseline;
   background: white; 
-  border-bottom: 1px solid #2c2c2c20;
-  box-shadow: 1px 1px #2c2c2c20;
+  border-bottom: 0.1rem solid #2c2c2c20;
+  box-shadow: 0.1rem 0.1rem #2c2c2c20;
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 1.875rem;
+  padding-bottom: 0rem;
   position: sticky;
   top: 0;
   z-index: 200;
@@ -36,7 +44,7 @@ header {
   flex-direction: column;
 } 
 .logo {
-  max-width: 250px;
+  max-width: 10rem;
   border-radius: 0;
 }
 .img {
@@ -50,7 +58,6 @@ header {
   flex-direction: column;
 }
 .center-text {
-  font-size: 2rem;
   text-align: center;
 }
 #menu-input{
@@ -74,8 +81,8 @@ header {
 }
 #kebab-menu {
   align-items: center;
-  font-size: 80px;
-  right: 32px;
+  font-size: 5rem;
+  right: 2rem;
   will-change: none;
 }
 #kebab-menu #sidebar-menu {
@@ -94,7 +101,7 @@ header {
 }
 @media screen and (min-width: 1000px) {
   #sidebar-menu {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 #menu-input:checked + #kebab-menu #sidebar-menu {
@@ -108,15 +115,14 @@ button {
   align-items: center;
   background-color: #00aeef;
   border: #00aeef;
-  border-radius: 10px;
+  border-radius: 1rem;
   color: white;
   display: flex;
   font-weight: bold;
   justify-content: space-evenly;
-  line-height: 3rem;
   padding: 1.25rem 2rem; 
   margin: 2rem;
-  min-width: 250px;
+  min-width: 15rem;
 }
 button:hover {
   cursor: pointer;
@@ -126,13 +132,14 @@ button:hover {
   align-items: center;
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 5vh;
 }
 i {
-  font-size: 45px;
+  font-size: 3rem;
 }
 ul {
+  font-family: 'ProximaNova-Bold';
   list-style: none;
 }
 a {
@@ -142,22 +149,22 @@ a {
 footer {
   align-items: center;
   background-color: #00aeef;
-  border-radius: 1px 1px 0px 0px;
+  border-radius: 0.1rem 0.1rem 0rem 0rem;
   color: white;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding: 3.75rem;
 }
 
 footer li.icon {
   display: inline-flex;
-  font-size: 32px;
-  padding: 40px;
+  font-size: 2rem;
+  padding: 2.5rem;
 }
 img {
   border-radius: 50%;
-  max-height: 300px;
+  max-height: 20rem;
 }
 .img {
   align-items: center;
@@ -171,14 +178,16 @@ em {
 form {
   display: flex;
   flex-direction: column;
-  padding: 10vh;
+  padding: 4rem;
 }
 label {
-  font-weight: bold;
+  font-size: 2em;
+  font-family: ProximaNova-Bold;
 }
 input, select, textarea {
-  border: 1px solid rgba(0,0,0,0.2);
-  padding: 0.75em 1rem;
+  border: 0.1rem solid rgba(0,0,0,0.2);
+  font-size: 2em;
+  padding: 1rem;
   margin-bottom: 1rem;
 }
 .row {
@@ -186,7 +195,7 @@ input, select, textarea {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 1rem;
+  margin: 2rem;
 }
 @media screen and (min-width: 1000px) {
   .row {
@@ -198,14 +207,24 @@ input, select, textarea {
   margin: 1rem;
   margin-bottom: 2rem;
 }
-h1,h2,h3,h4,h5,h6 {
+h1 {
   margin: 0;
+  font-family: ProximaNova-Black;
+  font-size: 4rem;
+}
+h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-family: ProximaNova-Bold;
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5em;
 }
 .card {
   align-items: center;
-  border: 1px solid #2c2c2c20;
-  border-radius: 10px;
-  box-shadow: 1px 1px  #2c2c2c20;
+  border: 0.1rem solid #2c2c2c20;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem  #2c2c2c20;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -215,5 +234,5 @@ h1,h2,h3,h4,h5,h6 {
   margin: 1rem;
 }
 #content {
-  padding: 2.5vh;
+  padding: 4rem
 }

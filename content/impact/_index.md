@@ -13,7 +13,7 @@ So far, we have built or improved water systems in 6 rural schools.
 <!-- EMBEDDED MWATER MAP -->
 
 ## what is next?
-We have lots of upcoming projects and big ambitions. If you would like to know more about anything specific, we would always be happy to chat – contact us [here]({{}}).
+We have lots of upcoming projects and big ambitions. If you would like to know more about anything specific, we would always be happy to chat – contact us [here]({{< ref "/reach-out" >}}).
 <!-- Governance – a big word that just means how schools manage their water supply and report back on it
 Training – in water management, but also in safeguarding and financial reporting
 Partnerships – helping our partners achieve NGO status and providing further funding for our next projects
