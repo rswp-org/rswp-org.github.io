@@ -4,7 +4,9 @@ title: "donate"
 date: 2023-11-20T11:50:29Z
 weight: 40
 ---
-Make a [one-off donation](https://donate.stripe.com/8wM7tQ2oR2SI1So9AE) or consider our regular donation options below.
+Make a one-off donation [in GBP](https://donate.stripe.com/8wM7tQ2oR2SI1So9AE) or [in USD](https://buy.stripe.com/eVa29w0gJ0KA0Ok005). 
+
+Consider our regular donation options below.
 
 {{< donate-button >}}
 
