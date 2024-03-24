@@ -1,89 +1,170 @@
 <template>
     <v-app>
       <v-main>
-        <nav height="50" float>
-            <v-container fluid>
+            <v-container  class="mb-16, pa-8" style="max-width: 1100px; flex">
                 <v-row align="start">
-                    <v-col align="center" height="50" class="logo" align-start>
-                        <v-img height="100%" width="100%" src="./assets/RSWP_Logo_Vertical_FullColour.png"></v-img>
+
+                    <v-col align="start" class="logo" align-start>
+                        <v-img  rounded width="150px" src="./assets/RSWP_Logo_Horizontal_FullColour.png"></v-img>
                     </v-col> 
+
+                    <v-spacer></v-spacer>
+                      <v-col cols="2" align-self="end" justify="end">
+                          <v-btn justify-end height="50" max-width="150" class="button" href="https://rswp.beehiiv.com/" color="primary">
+                                  <p style="text-transform: unset !important;  font-size: 50%; color:white">newsletter</p>
+                          </v-btn> 
+                      </v-col>
+                        <v-col cols="2" align-self="end">
+                          <v-btn justify-end height="50" max-width="150" class="button" href="https://donate.stripe.com/8wM7tQ2oR2SI1So9AE" color="primary">
+                                  <p style="text-transform: unset !important;  font-size: 50%; color:white">donate</p>
+                          </v-btn>       
+                        </v-col>
+                    
                 </v-row>
             </v-container>
-        </nav>
         
+            <v-divider class="ma-12" style="opacity: 0%;" ></v-divider>
  
-        <v-container fluid >
-                <v-row justify="center">
-                    <v-col justify="center">
-                    <h1 align="center">local, sustainable water services for primary schools in rural Uganda</h1>
+        <v-container class="mt-16, pa-8" style="max-width: 1100px; flex">
+     
+                <v-row class="mb-8" justify="start">
+                    <v-col class="mt-14" justify="start">
+
+                      <h1 class="mb-10">data-driven <span style="color: #00aeef;">water</span> solutions for Ugandan schools</h1>
+
+                        <p style="font-size: 100%;" class="mt-8" >If you wish to support us further please press the link below</p>
+
+                        <v-btn width="200" height="50" class="button mt-8" href="https://donate.stripe.com/8wM7tQ2oR2SI1So9AE" color="primary">
+                                  <h3 style="font-size: 100%; color:white">donate</h3>
+                        </v-btn>
+
                     </v-col>
-                </v-row>
+                    <v-col style="scale: 100%;" align-self="start">
+                      <v-img style="min-height: 100px; text-align: left; display: block;" src="./assets/RSWP_Logo_Horizontal_FullColour.png"></v-img>
+                    </v-col>
+                </v-row>        
         </v-container>
+        
+        
+        <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+        <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
 
-
-        <v-container ma-4 justify="center" fluid>
-            <v-row  justify="center">
-            <h2>Join our mailing list!</h2>
+        <!--NEWLETTER SECTION
+        <v-container style="max-width: 1100px; ">
+          <h2 style="text-align: start; color: black;">check out our latest newsletter articles!</h2>
+          <v-card color="primary" elevation="4">
+            
+            <v-row class="ma-2" justify="center">
+              <h3 style="text-align: start; color: white; padding-bottom: 10%;">latest Posts</h3>             
             </v-row>
 
-            <v-row justify="center" align="center">
-                    <iframe src="https://embeds.beehiiv.com/c613290e-b178-4159-a94b-037745d9ab4b?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
-                <!--<div class="button">
-                    <a href="https://donate.stripe.com/8wM7tQ2oR2SI1So9AE" aria-label="donate to rswp" target="_blank" rel="noopener noreferrer">
-                    <button>
-                            <h2>donate</h2>
-                            <div class="img">
-                                <i class="bi bi-arrow-right-short" style="color:white"></i>
-                            </div>
-                    </button>
-                    </a>
-                    <a href="/donate"><p>more donation options</p></a>
-                -->
-            </v-row>
+              <v-row class="" justify="start" >
+                <v-col class="" cols="3">
+                
+                  <v-card justify="center" class="ma-2" outlined  height="350px" width="250px" color="white" elevation="4" rounded>
+                    <h4 style="text-align: center;">Post 1</h4>
+                    <v-img :src=imageUrl></v-img>
+                  </v-card>
+
+                  </v-col>
+                  <v-col class="mt-8" cols="3">
+                  
+                  <v-card justify="center" class="ma-2" outlined  height="350px" width="250px" color="white" elevation="4" rounded>
+                    <h4 style="text-align: center;">Post 1</h4>
+                    <v-img src="../assets/images/test.jpg"></v-img>
+                  </v-card>
+              </v-col>
+
+              </v-row>
+          </v-card>
         </v-container>
+      -->
+       
 
+        <Work ></Work>
 
-        <Work></Work>
+        <team></team>
 
+        <Foot></Foot>
 
     </v-main>
   </v-app>
   </template>
   
-  <script setup lang="ts">
-    import Work from './components/ourWork.vue'
+  <script>
+    import Work from './components/ourWork.vue';
+    import signup from './components/signup.vue';
+    import team from './components/team.vue';
+    import Map from './components/Map.vue';
+    import Foot from './components/footer.vue';
+    import axios from 'axios';
+    import { ref, onMounted } from 'vue';
 
-    //
-  </script>
+    export default {
+    name: 'App',
+    channel: "",
+    imageUrl: "",
+    //const imageUrl = ref('');
+
+      components: {
+        Map,
+        team,
+        signup,
+        Work,
+        Foot,
+        imageUrl: "",
+      },
+
+      onMounted() {
+        axios.get('https://rss.beehiiv.com/feeds/hHhwMc7G7A.xml')
+        .then(function (response) {
+          const xmlString = response.data;
+          console.log(xmlString) 
+
+          const parser = new DOMParser();
+          const xmlDoc = parser.parseFromString(xmlString, "text/xml");
+        
+
+          const channels = xmlDoc.getElementsByTagName('channel');
+
+          // Iterate over each channel
+          for (let i = 0; i < channels.length; i++) {
+            const channel = channels[i];
+            imageUrl = channel.getElementsByTagName('url')[i];
+            console.log(imageUrl)
+          }
+        });
+      }
+
+
+    }
   
-  <style>
-  @font-face { 
+</script>
+
+
+<style>
+@font-face { 
   font-family: 'ProximaNova-Regular'; 
-  src: url('/ProximaNova-Regular.otf') format('opentype'); 
+  src: url('./assets/ProximaNova-Regular.otf') format('opentype'); 
+  color: #2c2c2c;
 } 
 @font-face { 
   font-family: 'ProximaNova-Bold'; 
-  src: url(/ProximaNova-Bold.otf) format('opentype');
+  src: url('./assets/ProximaNova-Bold.otf') format('opentype');
+  color: #2c2c2c;
 }
 @font-face { 
   font-family: 'ProximaNova-Black'; 
-  src: url(/ProximaNova-Black.otf) format('opentype');}
-html {
-  background-color: white;
+  src: url('./assets/ProximaNova-Black.otf') format('opentype');
   color: #2c2c2c;
-  font-family: 'ProximaNova-Regular';
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-} 
+}
+
 body {
   line-height: 1.5;
   margin: 0;
   min-height: 100vh;
 }
-.leader {
-  padding: 8rem;
-}
+
 nav {
   align-items: baseline;
   background: white; 
@@ -106,10 +187,7 @@ header {
   max-width: 10rem;
   border-radius: 0;
 }
-.img {
-  align-items: center;
-  display: flex;
-}
+
 .banner {
   align-items: center;
   display: flex;
@@ -119,13 +197,7 @@ header {
 .center-text {
   text-align: center;
 }
-#menu-input{
-  display: none;
-}
-#sidebar-menu li {
-  text-align: center;
-  padding: 2rem;
-}
+
 .overlay{
   background-color: white;
   left: 0;
@@ -138,31 +210,7 @@ header {
   width: 100%;
   z-index: -1;
 }
-#kebab-menu {
-  align-items: center;
-  font-size: 5rem;
-  right: 2rem;
-  will-change: none;
-}
-#kebab-menu #sidebar-menu {
-  background-color: white;
-  box-sizing: border-box;
-  color: #00aeef;
-  height: 100%;
-  left: -100vw;
-  opacity: 0.95;
-  position: fixed;
-  padding: 8rem;
-  top: 0;
-  transition: 0.3s;
-  visibility: hidden;
-  width: 100%;
-}
-@media screen and (min-width: 1000px) {
-  #sidebar-menu {
-    font-size: 1.5rem;
-  }
-}
+
 #menu-input:checked + #kebab-menu #sidebar-menu {
   visibility: visible;
   left: 0;
@@ -171,28 +219,22 @@ header {
  visibility: visible;
 }
 button {
-  align-items: center;
   background-color: #00aeef;
   border: #00aeef;
   border-radius: 1rem;
   color: white;
   display: flex;
-  font-weight: bold;
-  justify-content: space-evenly;
-  padding: 1.25rem 2rem; 
-  margin: 2rem;
   min-width: 15rem;
+  
 }
 button:hover {
   cursor: pointer;
   filter: brightness(85%);
 }
 .button {
-  align-items: center;
   display: flex;
-  justify-content: center;
   font-size: 1.5rem;
-  margin: 5vh;
+  text-transform:lowercase
 }
 i {
   font-size: 3rem;
@@ -205,31 +247,7 @@ a {
   color: currentColor;
   text-decoration: none;
 }
-footer {
-  align-items: center;
-  background-color: #00aeef;
-  border-radius: 0.1rem 0.1rem 0rem 0rem;
-  color: white;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 3.75rem;
-}
 
-footer li.icon {
-  display: inline-flex;
-  font-size: 2rem;
-  padding: 2.5rem;
-}
-img {
-  border-radius: 50%;
-  max-height: 20rem;
-}
-.img {
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-}
 em {
   color: #00aeef;
   font-style: normal;
@@ -267,14 +285,22 @@ input, select, textarea {
   margin-bottom: 2rem;
 }
 h1 {
-  margin: 0;
+  margin: -1;
   font-family: ProximaNova-Black;
-  font-size: 4rem;
+  font-size: 2.75rem;
+  text-align: left;
+  letter-spacing: -2px;
+  line-height: 120%;
+  color: #2c2c2c;
+}
+.water {
+  color: #00aeef;
 }
 h2,h3,h4,h5,h6 {
   margin: 0;
   font-family: ProximaNova-Bold;
   font-size: 2rem;
+  color: #2c2c2c;
 }
 p {
   font-size: 1.5em;
@@ -295,5 +321,7 @@ p {
 #content {
   padding: 4rem
 }
-  
+
+
+
   </style>
