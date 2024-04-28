@@ -1,50 +1,48 @@
 <template>
     <v-app>
       <v-main>
-            <v-container  class="mb-16, pa-8" style="max-width: 1100px; flex">
-                <v-row align="start">
+        <v-container  class="mb-16, pa-8" style="max-width: 1100px; flex">
+            <v-row align="start">
 
-                    <v-col align="start" class="logo" align-start>
-                        <v-img  rounded width="150px" src="./assets/RSWP_Logo_Horizontal_FullColour.png"></v-img>
-                    </v-col> 
+                <v-col align="start" class="logo" align-start>
+                    <v-img  rounded width="150px" src="./assets/RSWP_Logo_Horizontal_FullColour.png"></v-img>
+                </v-col> 
 
-                    <v-spacer></v-spacer>
-                      <v-col cols="2" align-self="end" justify="end">
-                          <v-btn justify-end height="50" max-width="150" class="button" href="https://rswp.beehiiv.com/" color="primary">
-                                  <p style="text-transform: unset !important;  font-size: 50%; color:white">newsletter</p>
-                          </v-btn> 
-                      </v-col>
-                        <v-col cols="2" align-self="end">
-                          <v-btn justify-end height="50" max-width="150" class="button" href="https://donate.stripe.com/8wM7tQ2oR2SI1So9AE" color="primary">
-                                  <p style="text-transform: unset !important;  font-size: 50%; color:white">donate</p>
-                          </v-btn>       
-                        </v-col>
-                    
-                </v-row>
-            </v-container>
-        
-            <v-divider class="ma-12" style="opacity: 0%;" ></v-divider>
- 
-        <v-container class="mt-16, pa-8" style="max-width: 1100px; flex">
-     
-                <v-row class="mb-8" justify="start">
-                    <v-col class="mt-14" justify="start">
-
-                      <h1 class="mb-10">data-driven <span style="color: #00aeef;">water</span> solutions for Ugandan schools</h1>
-
-                        <p style="font-size: 100%;" class="mt-8" >If you wish to support us further please press the link below</p>
-
-                        <v-btn width="200" height="50" class="button mt-8" href="https://donate.stripe.com/8wM7tQ2oR2SI1So9AE" color="primary">
-                                  <h3 style="font-size: 100%; color:white">donate</h3>
-                        </v-btn>
-
+                <v-spacer></v-spacer>
+                  <v-col cols="2" align-self="end" justify="end">
+                      <v-btn justify-end height="50" max-width="150" class="button" href="https://rswp.beehiiv.com/" color="primary">
+                              <p style="text-transform: unset !important;  font-size: 50%; color:white">newsletter</p>
+                      </v-btn> 
+                  </v-col>
+                    <v-col cols="2" align-self="end">
+                      <v-btn justify-end height="50" max-width="150" class="button" href="https://donate.stripe.com/8wM7tQ2oR2SI1So9AE" color="primary">
+                              <p style="text-transform: unset !important;  font-size: 50%; color:white">donate</p>
+                      </v-btn>       
                     </v-col>
-                    <v-col style="scale: 100%;" align-self="start">
-                      <v-img style="min-height: 100px; text-align: left; display: block;" src="./assets/RSWP_Logo_Horizontal_FullColour.png"></v-img>
-                    </v-col>
-                </v-row>        
+                
+            </v-row>
         </v-container>
-        
+    
+        <v-divider class="ma-12" style="opacity: 0%;" ></v-divider>
+
+        <v-container class="mt-16, pa-8" style="max-width: 1100px; flex">
+          <v-row class="mb-8" justify="start">
+              <v-col class="mt-14" justify="start">
+                <h1 class="mb-10">data-driven <span style="color: #00aeef;">water</span> solutions for Ugandan schools</h1>
+
+                  <p style="font-size: 100%;" class="mt-8">If you wish to support us further please press the link below</p>
+
+                  <v-btn width="200" height="50" class="button mt-8" href="https://donate.stripe.com/8wM7tQ2oR2SI1So9AE" color="primary">
+                            <h3 style="font-size: 100%; color:white">donate</h3>
+                  </v-btn>
+
+              </v-col>
+              <v-col class="mt-14" style="scale: 100%;">
+                <v-img justify-end style="height: 250px;" src="./assets/RSWP_Logo_Horizontal_FullColour.png"></v-img>
+              </v-col>
+          </v-row>        
+        </v-container>
+    
         
         <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
         <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
@@ -115,27 +113,26 @@
         imageUrl: "",
       },
 
-      onMounted() {
-        axios.get('https://rss.beehiiv.com/feeds/hHhwMc7G7A.xml')
-        .then(function (response) {
-          const xmlString = response.data;
-          console.log(xmlString) 
+      // onMounted() {
+      //   axios.get('https://rss.beehiiv.com/feeds/hHhwMc7G7A.xml')
+      //   .then(function (response) {
+      //     const xmlString = response.data;
+      //     console.log(xmlString) 
 
-          const parser = new DOMParser();
-          const xmlDoc = parser.parseFromString(xmlString, "text/xml");
+      //     const parser = new DOMParser();
+      //     const xmlDoc = parser.parseFromString(xmlString, "text/xml");
         
 
-          const channels = xmlDoc.getElementsByTagName('channel');
+      //     const channels = xmlDoc.getElementsByTagName('channel');
 
-          // Iterate over each channel
-          for (let i = 0; i < channels.length; i++) {
-            const channel = channels[i];
-            imageUrl = channel.getElementsByTagName('url')[i];
-            console.log(imageUrl)
-          }
-        });
-      }
-
+      //     // Iterate over each channel
+      //     for (let i = 0; i < channels.length; i++) {
+      //       const channel = channels[i];
+      //       imageUrl = channel.getElementsByTagName('url')[i];
+      //       console.log(imageUrl)
+      //     }
+      //   });
+      // }
 
     }
   
@@ -224,7 +221,6 @@ button {
   border-radius: 1rem;
   color: white;
   display: flex;
-  min-width: 15rem;
   
 }
 button:hover {
@@ -274,11 +270,8 @@ input, select, textarea {
   justify-content: space-evenly;
   margin: 2rem;
 }
-@media screen and (min-width: 1000px) {
-  .row {
-    flex-direction: row;
-  }
-}
+
+
 .col {
   flex: 30%;
   margin: 1rem;
