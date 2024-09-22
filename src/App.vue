@@ -1,60 +1,57 @@
 <template>
 
-  <v-container class="" color="blue" >
-    <v-img src="./assets/rswp_hero _bw_flip.JPG">
-      <v-row cols="3" align="start" no-gutters="">
-      <v-col  color="primary">
-        <v-img src="../src/assets/">
+<Hero></Hero>
 
-        </v-img>
-      </v-col>
-        <v-button>
-          
-        </v-button>
-      <v-col>
-        <v-row>
+<v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
 
+<story></story>
+
+<v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+
+<v-container class="size">
+  <v-card style="background: #00aeef;">
+    <v-col class="d-flex flex-column justify-center align-center">
+      <h2 class="py-2">stay in the know</h2>
+      <h5>subscribe to our newsletter for all the latest updates and insights</h5>
+      
+        <v-row class="mt-5 mb-2"  justify="center">
+          <v-card style="background: #00aeef">
+          <iframe src="https://embeds.beehiiv.com/c613290e-b178-4159-a94b-037745d9ab4b?slim=true" data-test-id="beehiiv-embed" height="50" frameborder="0" scrolling="no" style="background: #00aeef"></iframe>
+          </v-card>
         </v-row>
 
-        <v-row>
-          <h2> Hello im willllllllllllllllllllllllllllllllllllllllllllllllllll</h2>
-        </v-row>
-        
-      </v-col>
+    </v-col>
+  </v-card>
+</v-container>
 
-      <v-col>
-        
-      </v-col>
-    </v-row >
-    </v-img>
-  </v-container>
+  <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+
+<foot></foot>
 
 </template>
 
 <script setup>
+import Hero from "./components/Hero.vue"
+import foot from "./components/footer.vue"
+import story from "./components/Story.vue"
 </script>
 
+
 <style scoped>
-.hcard {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 160px 24px;
-gap: 32px;
+
+.size {
+  max-width: 80%;
+  justify-content: center;
 }
 
-.test{
-position: absolute;
-width: 1440px;
-height: 664px;
-left: 1440px;
-top: 0px;
+.beehiv {
+  max-width: 80%;
+  color: blue;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+
 }
 
-.himg {
-  mix-blend-mode: luminosity;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
 </style>
+
