@@ -23,7 +23,7 @@
           <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
 
           <v-row>
-            <h2> Hello im willllllllllllllllllllllllllllllllllllllllllllllllllll</h2>
+            <h2> Placeholder </h2>
           </v-row>
 
       </v-col>
