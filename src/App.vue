@@ -2,7 +2,11 @@
 
   <Hero></Hero>
 
-  <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+<v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+
+<give></give>
+
+<v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
 
   <story></story>
 
