@@ -31,3 +31,17 @@ import story from "./components/Story.vue"
 import newsletter from "./components/Newsletter.vue"
 import team from "./components/Team.vue"
 </script>
+
+<style>
+@font-face { 
+  font-family: 'ProximaNova-Regular'; 
+  src: url("./ProximaNova-Regular.otf") format('opentype'); 
+} 
+@font-face { 
+  font-family: 'ProximaNova-Bold'; 
+  src: url("./ProximaNova-Bold.otf") format('opentype');
+}
+@font-face { 
+  font-family: 'ProximaNova-Black'; 
+  src: url("./ProximaNova-Black.otf") format('opentype');}
+  </style>
