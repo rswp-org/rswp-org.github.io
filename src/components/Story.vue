@@ -21,7 +21,7 @@
 
         <v-col cols="12" md="6" class="pa-6">
           <v-row class="justify-end py-1">
-            <v-img src="..\assets\sharon_francis.JPG"></v-img>
+            <v-img src="..\assets\sharon_francis.JPG" class="rounded-lg"></v-img>
           </v-row>
         </v-col>
 

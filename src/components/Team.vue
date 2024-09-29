@@ -42,7 +42,7 @@
 
                 <v-col cols="12" md="6" lg="6" class="pa-8">
                 <v-card class="custom-card">
-                    <v-row cols="2">
+                    <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
                         <v-img 
@@ -56,18 +56,14 @@
                         </v-col>
                         <!-- Name, Title, and Social Icons Column -->
                         <v-col class="d-flex flex-column justify-center">
-                            <v-row class="justify-start mb-1">
-                                <h3 class="text-left mb-0">Matt Coote</h3>
-                            </v-row>
-                            <v-row class="justify-start mb-1">
-                                <h4 class="text-left mb-0">Finance Lead</h4>
-                            </v-row>
-                            <v-row class="justify-start align-center mb-10">
+                                <h3 class="text-left">Matt Coote</h3>
+                                <h4 class="text-left mb-5">Finance Lead</h4>
+                            <v-row class="social-icons">
                                 <a href="https://github.com/rswp-org" target="_blank">
-                                    <img src="../assets/github.svg" class="icon mx-1" />
+                                    <img src="../assets/github.svg" class="icon" />
                                 </a>
                                 <a href="https://www.linkedin.com/company/rural-schools-water-project" target="_blank">
-                                    <img src="../assets/linkedin.svg" class="icon mx-1" />
+                                    <img src="../assets/linkedin.svg" class="icon" />
                                 </a>
                             </v-row>
                         </v-col>
@@ -239,7 +235,13 @@
         }
     .icon {
     max-width: 25px;
+    margin-right: 2px;
     height: auto;
     filter: brightness(0.9) invert(1); /* Ensures the icons are black */
+    }
+    .social-icons {
+    margin-left: 0px; /* Adjust this value to align perfectly with the text */
+    display: flex;    /* Make it a flex container */
+    justify-content: flex-start; /* Align to the left */
     }
 </style>
