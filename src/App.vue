@@ -1,4 +1,4 @@
-<template>
+<template style="main">
 
   <Hero></Hero>
 
@@ -86,6 +86,11 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+main{
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,174,239,0.08167016806722693) 63%, rgba(0,174,239,1) 100%);
 }
 
 </style>

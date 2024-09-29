@@ -8,3 +8,10 @@
         </v-row>
     </v-container>
 </template>
+
+<style>
+    .size {
+        max-width: 80%;
+        justify-content: center;
+        }
+</style>

@@ -66,7 +66,7 @@
                         <!-- Name, Title, and Social Icons Column -->
                         <v-col class="d-flex flex-column justify-center">
                                 <h3 class="text-left">Matt Coote</h3>
-                                <h4 class="text-left mb-5">Finance Lead</h4>
+                                <h4 class="text-left mb-5">Finance Lead and Software Developer</h4>
                             <v-row class="social-icons">
                                 <a href="https://github.com/mtccoote" target="_blank">
                                     <img src="../assets/github.svg" class="icon" />
