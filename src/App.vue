@@ -85,7 +85,7 @@ p {
 
 a {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 </style>
