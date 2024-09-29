@@ -1,49 +1,42 @@
 <template>
-  <v-img class="hcard" src="../assets/rswp_hero _bw_flip.JPG">
-
+  <v-container class="hero">
     <v-row class="ma-0" style="height: 100%;" cols="3" align="top" >
-      
-      <v-col style="height: 100%; justify-content: space-evenly" > <!-- logo top corner -->
+      <v-col style="height: 100%" >
         <v-img class="ma-5" src="../assets/RSWP_Logo_Horizontal_Inverse.svg"></v-img>
       </v-col>
-
-      <v-col style="height: 100%"> <!-- Button at top -->
-        <v-row class="ma-5" style="justify-content: center">
-          <v-btn color="#00aeef" style="align: center; min-width:33%" rounded>Give</v-btn>
+      <v-col style="height: 100%">
+        <v-row class="ma-5 justify-center">
+          <v-btn class="text-none" color="#00aeef" style="align: center; min-width:33%" rounded><a href="#give">give</a></v-btn>
         </v-row>
       </v-col>
-    
-      <v-col class="ma-5" style="height: 100%"> <!-- text -->
+      <v-col class="ma-5" style="height: 100%">
         <v-row class="justify-end">
-          <v-img style="max-width: 15%" src="../assets/github.svg" class="icon mx-1" />
-          <v-img style="max-width: 15%" src="../assets/instagram.svg" class="icon mx-1" />
-          <v-img style="max-width: 15%" src="../assets/linkedin.svg" class="icon mx-1" />
-          <v-img style="max-width: 15%" src="../assets/youtube.svg" class="icon mx-1" />
+          <v-img style="max-width: 10%" src="../assets/github.svg" class="icon mx-1" />
+          <v-img style="max-width: 10%" src="../assets/instagram.svg" class="icon mx-1" />
+          <v-img style="max-width: 10%" src="../assets/linkedin.svg" class="icon mx-1" />
+          <v-img style="max-width: 10%" src="../assets/youtube.svg" class="icon mx-1" />
+        </v-row>
+        <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+        <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+        <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+        <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+        <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
+        <v-row class="pa-8" cols="3" align="center">
+          <p style="color: white; text-align: right"> We are a small charity using data and technology to build solutions for schools and communities facing water crises. We’ve built 6 school water systems in Uganda since 2017—and we’re just getting started.</p>
         </v-row>
       </v-col>
     </v-row>
-        <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
-        <v-divider class="ma-16" style="opacity: 0%;" ></v-divider>
-    <v-row style="align-items: end">
-      <h2> Placeholder </h2>
-    </v-row>
-  </v-img>
-
+  </v-container>
 </template>
 
 <style scoped>
 
-.hcard {
-align-items: start;
-top: 0;
-left: 0;
-max-width: 100%;
-max-height: 100%;
-}
-
-.hcard img {
-max-height: 50%;
-max-width: 100%;
+.hero {
+  align: center;
+  background: url("../assets/rswp_hero _bw_flip.JPG");
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
 }
 
 .icons{
