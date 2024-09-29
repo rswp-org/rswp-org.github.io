@@ -83,4 +83,9 @@ p {
   color: #2c2c2c;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 </style>

@@ -12,7 +12,7 @@
                 </v-col>
             </v-row>
             <v-row class="py-2 justify-center align-center">
-                <v-btn color="#00aeef" rounded>Learn more about the team</v-btn>
+                <v-btn class="text-none" color="#00aeef" rounded>about us</v-btn>
             </v-row>
             <v-row class="justify-center align-center">
                 <h2 class="py-5">trustees</h2>
