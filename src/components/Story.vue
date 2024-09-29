@@ -15,7 +15,7 @@
 
 
           <v-row class="py-2">
-            <v-btn color="#00aeef" rounded elevation="4">Read the full version</v-btn>
+            <v-btn class="text-none" color="#00aeef" rounded elevation="4">read more</v-btn>
           </v-row>
         </v-col>
 
