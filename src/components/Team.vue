@@ -18,25 +18,34 @@
                 <h2 class="py-5">trustees</h2>
             </v-row>
             <v-row class="d-flex justify-center">
-                <v-col cols="12" md="6" lg="6" class="pa-5">
+                <v-col cols="12" md="6" lg="6" class="pa-8">
                 <v-card class="custom-card">
-                    <v-row cols="2">
-                    <v-col class="d-flex justify-center align-center">
+                    <v-row cols="2" class="align-center">
+                        <!-- Profile Image Column -->
+                        <v-col class="d-flex justify-center align-center">
                         <v-img 
-                        src="../assets/will.png" 
-                        class="rounded-circle" 
-                        contain
-                        max-width="150px"
-                        max-height="150px"
-                        style="border-radius: 50%; object-fit: contain;">
+                            src="../assets/will.png" 
+                            class="rounded-circle" 
+                            contain
+                            max-width="150px"
+                            max-height="150px"
+                            style="border-radius: 50%; object-fit: contain;">
                         </v-img>
-                    </v-col>
-                    <v-col class="d-flex flex-column justify-center">
-                        <h3 class="text-left">Will Knapman</h3>
-                        <h5 class="text-left">Founder and Operations Lead</h5>
-                        <h6>Hey! I'm Will and I have the priviledge of leading our amazing board of trustees. I've been part of RSWP since 2014 and I'm heavily involved in leading our projects and partnerships.</h6>
-                    </v-col>
-                    </v-row>
+                        </v-col>
+                        <!-- Name, Title, and Social Icons Column -->
+                        <v-col class="d-flex flex-column justify-center">
+                                <h3 class="text-left">Will Knapman</h3>
+                                <h4 class="text-left mb-5">Founder and Operations Lead</h4>
+                            <v-row class="social-icons">
+                                <a href="https://github.com/will-knapman" target="_blank">
+                                    <img src="../assets/github.svg" class="icon" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/will-knapman/" target="_blank">
+                                    <img src="../assets/linkedin.svg" class="icon" />
+                                </a>
+                            </v-row>
+                        </v-col>
+                    </v-row>    
                 </v-card>
                 </v-col>
 
@@ -59,10 +68,10 @@
                                 <h3 class="text-left">Matt Coote</h3>
                                 <h4 class="text-left mb-5">Finance Lead</h4>
                             <v-row class="social-icons">
-                                <a href="https://github.com/rswp-org" target="_blank">
+                                <a href="https://github.com/mtccoote" target="_blank">
                                     <img src="../assets/github.svg" class="icon" />
                                 </a>
-                                <a href="https://www.linkedin.com/company/rural-schools-water-project" target="_blank">
+                                <a href="https://www.linkedin.com/in/matt-coote-54bb40192/" target="_blank">
                                     <img src="../assets/linkedin.svg" class="icon" />
                                 </a>
                             </v-row>
@@ -72,62 +81,86 @@
                 </v-col>
                 <v-col cols="12" md="6" lg="6" class="pa-8">
                 <v-card class="custom-card">
-                    <v-row cols="2">
-                    <v-col class="d-flex justify-center align-center">
+                    <v-row cols="2" class="align-center">
+                        <!-- Profile Image Column -->
+                        <v-col class="d-flex justify-center align-center">
                         <v-img 
-                        src="../assets/baaldesh.png" 
-                        class="rounded-circle" 
-                        contain
-                        max-width="150px"
-                        max-height="150px"
-                        style="border-radius: 50%; object-fit: contain;">
+                            src="../assets/baaldesh.png" 
+                            class="rounded-circle" 
+                            contain
+                            max-width="150px"
+                            max-height="150px"
+                            style="border-radius: 50%; object-fit: contain;">
                         </v-img>
-                    </v-col>
-                    <v-col class="d-flex flex-column justify-center">
-                        <h4 class="text-left">Baaldesh Singh</h4>
-                        <h5 class="text-left">General Counsel</h5>
-                    </v-col>
-                    </v-row>
+                        </v-col>
+                        <!-- Name, Title, and Social Icons Column -->
+                        <v-col class="d-flex flex-column justify-center">
+                                <h3 class="text-left">Baaldesh Singh</h3>
+                                <h4 class="text-left mb-5">General Counsel</h4>
+                            <v-row class="social-icons">
+                                <a href="https://www.linkedin.com/in/baaldesh-singh-37a44b173/" target="_blank">
+                                    <img src="../assets/linkedin.svg" class="icon" />
+                                </a>
+                            </v-row>
+                        </v-col>
+                    </v-row>    
                 </v-card>
                 </v-col>
                 <v-col cols="12" md="6" lg="6" class="pa-8">
                 <v-card class="custom-card">
-                    <v-row cols="2">
-                    <v-col class="d-flex justify-center align-center">
+                    <v-row cols="2" class="align-center">
+                        <!-- Profile Image Column -->
+                        <v-col class="d-flex justify-center align-center">
                         <v-img 
-                        src="../assets/isobel.png" 
-                        class="rounded-circle" 
-                        contain
-                        max-width="150px"
-                        max-height="150px"
-                        style="border-radius: 50%; object-fit: contain;">
+                            src="../assets/isobel.png" 
+                            class="rounded-circle" 
+                            contain
+                            max-width="150px"
+                            max-height="150px"
+                            style="border-radius: 50%; object-fit: contain;">
                         </v-img>
-                    </v-col>
-                    <v-col class="d-flex flex-column justify-center">
-                        <h4 class="text-left">Isobel Stewart</h4>
-                        <h5 class="text-left">Fundraising and Communications Lead</h5>
-                    </v-col>
-                    </v-row>
+                        </v-col>
+                        <!-- Name, Title, and Social Icons Column -->
+                        <v-col class="d-flex flex-column justify-center">
+                                <h3 class="text-left">Isobel Stewart</h3>
+                                <h4 class="text-left mb-5">Fundraising and Communications Lead</h4>
+                            <v-row class="social-icons">
+                                <a href="https://www.linkedin.com/in/isobel-stewart-6b9a7855/" target="_blank">
+                                    <img src="../assets/linkedin.svg" class="icon" />
+                                </a>
+                            </v-row>
+                        </v-col>
+                    </v-row>    
                 </v-card>
                 </v-col>
                 <v-col cols="12" md="6" lg="6" class="pa-8">
                 <v-card class="custom-card">
-                    <v-row cols="2">
-                    <v-col class="d-flex justify-center align-center">
+                    <v-row cols="2" class="align-center">
+                        <!-- Profile Image Column -->
+                        <v-col class="d-flex justify-center align-center">
                         <v-img 
-                        src="../assets/placeholder.png" 
-                        class="rounded-circle" 
-                        contain
-                        max-width="150px"
-                        max-height="150px"
-                        style="border-radius: 50%; object-fit: contain;">
+                            src="../assets/placeholder.png" 
+                            class="rounded-circle" 
+                            contain
+                            max-width="150px"
+                            max-height="150px"
+                            style="border-radius: 50%; object-fit: contain;">
                         </v-img>
-                    </v-col>
-                    <v-col class="d-flex flex-column justify-center">
-                        <h4 class="text-left">Anabella Spanos</h4>
-                        <h5 class="text-left">Data and Evidence Lead</h5>
-                    </v-col>
-                    </v-row>
+                        </v-col>
+                        <!-- Name, Title, and Social Icons Column -->
+                        <v-col class="d-flex flex-column justify-center">
+                                <h3 class="text-left">Anabella Spanos</h3>
+                                <h4 class="text-left mb-5">Data and Evidence Lead</h4>
+                            <v-row class="social-icons">
+                                <a href="https://github.com/anna-rswp" target="_blank">
+                                    <img src="../assets/github.svg" class="icon" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/anabella-spanos-1b6225141/" target="_blank">
+                                    <img src="../assets/linkedin.svg" class="icon" />
+                                </a>
+                            </v-row>
+                        </v-col>
+                    </v-row>    
                 </v-card>
                 </v-col>
             </v-row>
@@ -135,84 +168,116 @@
                 <h2 class="py-5">extended team</h2>
             </v-row>
             <v-row class="d-flex justify-center">
-                <v-col cols="12" md="6" lg="6" class="pa-4">
+                <v-col cols="12" md="6" lg="6" class="pa-8">
                 <v-card class="custom-card">
-                    <v-row cols="2">
-                    <v-col class="d-flex justify-center align-center">
+                    <v-row cols="2" class="align-center">
+                        <!-- Profile Image Column -->
+                        <v-col class="d-flex justify-center align-center">
                         <v-img 
-                        src="../assets/sharon.png" 
-                        class="rounded-circle" 
-                        contain
-                        max-width="150px"
-                        max-height="150px"
-                        style="border-radius: 50%; object-fit: contain;">
+                            src="../assets/sharon.png" 
+                            class="rounded-circle" 
+                            contain
+                            max-width="150px"
+                            max-height="150px"
+                            style="border-radius: 50%; object-fit: contain;">
                         </v-img>
-                    </v-col>
-                    <v-col class="d-flex flex-column justify-center">
-                        <h4 class="text-left">Sharon Akech</h4>
-                        <h5 class="text-left">Engineering Lead</h5>
-                    </v-col>
-                    </v-row>
+                        </v-col>
+                        <!-- Name, Title, and Social Icons Column -->
+                        <v-col class="d-flex flex-column justify-center">
+                                <h3 class="text-left">Sharon Akech</h3>
+                                <h4 class="text-left mb-5">Engineering Lead</h4>
+                            <v-row class="social-icons">
+                                <a href="https://www.linkedin.com/in/sharon-akech-8048b0209/" target="_blank">
+                                    <img src="../assets/linkedin.svg" class="icon" />
+                                </a>
+                            </v-row>
+                        </v-col>
+                    </v-row>    
                 </v-card>
                 </v-col>
-                <v-col cols="12" md="6" lg="6" class="pa-4">
+
+                <v-col cols="12" md="6" lg="6" class="pa-8">
                 <v-card class="custom-card">
-                    <v-row cols="2">
-                    <v-col class="d-flex justify-center align-center">
+                    <v-row cols="2" class="align-center">
+                        <!-- Profile Image Column -->
+                        <v-col class="d-flex justify-center align-center">
                         <v-img 
-                        src="../assets/kimberley.png" 
-                        class="rounded-circle" 
-                        contain
-                        max-width="150px"
-                        max-height="150px"
-                        style="border-radius: 50%; object-fit: contain;">
+                            src="../assets/kimberley.png" 
+                            class="rounded-circle" 
+                            contain
+                            max-width="150px"
+                            max-height="150px"
+                            style="border-radius: 50%; object-fit: contain;">
                         </v-img>
-                    </v-col>
-                    <v-col class="d-flex flex-column justify-center">
-                        <h4 class="text-left">Kimberley Ducimo</h4>
-                        <h5 class="text-left">Safeguarding Lead</h5>
-                    </v-col>
-                    </v-row>
+                        </v-col>
+                        <!-- Name, Title, and Social Icons Column -->
+                        <v-col class="d-flex flex-column justify-center">
+                                <h3 class="text-left">Kimberley Ducimo</h3>
+                                <h4 class="text-left mb-5">Safeguarding Lead</h4>
+                            <v-row class="social-icons">
+                                <a href="https://www.linkedin.com/in/kducimo/" target="_blank">
+                                    <img src="../assets/linkedin.svg" class="icon" />
+                                </a>
+                            </v-row>
+                        </v-col>
+                    </v-row>    
                 </v-card>
                 </v-col>
-                <v-col cols="12" md="6" lg="6" class="pa-4">
+                <v-col cols="12" md="6" lg="6" class="pa-8">
                 <v-card class="custom-card">
-                    <v-row cols="2">
-                    <v-col class="d-flex justify-center align-center">
+                    <v-row cols="2" class="align-center">
+                        <!-- Profile Image Column -->
+                        <v-col class="d-flex justify-center align-center">
                         <v-img 
-                        src="../assets/tommy.png" 
-                        class="rounded-circle" 
-                        contain
-                        max-width="150px"
-                        max-height="150px"
-                        style="border-radius: 50%; object-fit: contain;">
+                            src="../assets/marion.png" 
+                            class="rounded-circle" 
+                            contain
+                            max-width="150px"
+                            max-height="150px"
+                            style="border-radius: 50%; object-fit: contain;">
                         </v-img>
-                    </v-col>
-                    <v-col class="d-flex flex-column justify-center">
-                        <h4 class="text-left">Tommy Jennings</h4>
-                        <h5 class="text-left">Software Adviser</h5>
-                    </v-col>
-                    </v-row>
+                        </v-col>
+                        <!-- Name, Title, and Social Icons Column -->
+                        <v-col class="d-flex flex-column justify-center">
+                                <h3 class="text-left">Marion Kwambai</h3>
+                                <h4 class="text-left mb-5">Communications Advisor</h4>
+                            <v-row class="social-icons">
+                                <a href="https://www.linkedin.com/in/marion-kwambai-6a259215b/" target="_blank">
+                                    <img src="../assets/linkedin.svg" class="icon" />
+                                </a>
+                            </v-row>
+                        </v-col>
+                    </v-row>    
                 </v-card>
                 </v-col>
-                <v-col cols="12" md="6" lg="6" class="pa-4">
+                <v-col cols="12" md="6" lg="6" class="pa-8">
                 <v-card class="custom-card">
-                    <v-row cols="2">
-                    <v-col class="d-flex justify-center align-center">
+                    <v-row cols="2" class="align-center">
+                        <!-- Profile Image Column -->
+                        <v-col class="d-flex justify-center align-center">
                         <v-img 
-                        src="../assets/marion.png" 
-                        class="rounded-circle" 
-                        contain
-                        max-width="150px"
-                        max-height="150px"
-                        style="border-radius: 50%; object-fit: contain;">
+                            src="../assets/tommy.png" 
+                            class="rounded-circle" 
+                            contain
+                            max-width="150px"
+                            max-height="150px"
+                            style="border-radius: 50%; object-fit: contain;">
                         </v-img>
-                    </v-col>
-                    <v-col class="d-flex flex-column justify-center">
-                        <h4 class="text-left">Marion Kwambai</h4>
-                        <h5 class="text-left">Communications Adviser</h5>
-                    </v-col>
-                    </v-row>
+                        </v-col>
+                        <!-- Name, Title, and Social Icons Column -->
+                        <v-col class="d-flex flex-column justify-center">
+                                <h3 class="text-left">Tommy Jennings</h3>
+                                <h4 class="text-left mb-5">Software Advisor</h4>
+                            <v-row class="social-icons">
+                                <a href="https://github.com/Treaqle" target="_blank">
+                                    <img src="../assets/github.svg" class="icon" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/tommy-jennings-27068512a/" target="_blank">
+                                    <img src="../assets/linkedin.svg" class="icon" />
+                                </a>
+                            </v-row>
+                        </v-col>
+                    </v-row>    
                 </v-card>
                 </v-col>
             </v-row>
