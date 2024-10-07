@@ -30,7 +30,7 @@
     </v-row>
     <v-row class="ma-0 pa-4" style="height: 48%;">
       <v-col style="height: 100%; min-width: 25%; justify-content: right; align-content: center;">
-        <p style="align-items: end; color: white; text-align: right"> We are a small charity using data and technology to build solutions for schools and communities facing water crises.<br><br>We’ve built 6 school water systems in Uganda since 2017—and we’re just getting started.</p>
+        <p style="align-items: end; color: white; text-align: right"> <span class="highlight"> We are a small charity using data and technology to build solutions for schools and communities facing water crises.</span><br><br><span class="highlight">We’ve built 6 school water systems in Uganda since 2017—and we’re just getting started.</span></p>
       </v-col>
     </v-row>
   </v-container>
@@ -47,9 +47,13 @@
   object-fit: cover;
 }
 
-
-.img{
+.img {
    position: relative;
+}
+
+.highlight {
+  background-color: rgba(0, 174, 239, 0.8);
+
 }
 
 </style>
