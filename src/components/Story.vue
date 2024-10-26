@@ -15,7 +15,7 @@
 
 
           <v-row class="py-2">
-            <v-btn class="text-none" color="#00aeef" rounded elevation="4">read more</v-btn>
+            <v-btn class="text-none" color="#00aeef" rounded elevation="4" href="https://rswp.beehiiv.com/p/rural-schools-water-project-a-decade-in-the-making">read more</v-btn>
           </v-row>
         </v-col>
 
