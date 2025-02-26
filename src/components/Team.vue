@@ -7,13 +7,15 @@
             </v-row>
             <v-row class="justify-center align-center">
                 <v-col cols="12" md="10" class="text-center">
-                    <p class="py-2">RSWP is a dedicated team of international volunteers with diverse expertise in water governance, engineering, child safeguarding, accounting, law, communications, and data.</p>
-                    <p class="py-2">Working closely with local partners, we are committed to delivering impactful projects for schools and communities.</p>
+                    <p class="py-2" style="text-align: center;">RSWP is a dedicated team of international volunteers with diverse expertise in water management and engineering, software development and data science, child safeguarding, accounting, law, and public communications.</p>
+                    <p class="py-2" style="text-align: center;">Working closely with local partners, we are committed to delivering impactful projects for schools and communities.</p>
                 </v-col>
             </v-row>
+            <!-- about us btn 
             <v-row class="py-2 justify-center align-center">
                 <v-btn class="text-none" color="#00aeef" rounded>about us</v-btn>
             </v-row>
+            -->
             <v-row class="justify-center align-center">
                 <h2 class="py-5">trustees</h2>
             </v-row>
