@@ -37,7 +37,7 @@
 
         <v-col cols="12" md="6" class="pa-6">
           <v-row class="justify-end py-1">
-            <v-img src="..\assets\rainwater_screenshot.PNG" class="rounded-lg"></v-img>
+            <v-img src="..\assets\rainwater_screenshot.png" class="rounded-lg"></v-img>
           </v-row>
         </v-col>
 
