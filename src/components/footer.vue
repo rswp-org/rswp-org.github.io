@@ -1,7 +1,7 @@
 <template>
   <footer style="background-color: black">
     <v-row>
-      <v-col cols="12" md="6" class="pa-6">
+      <v-col md="6" class="pa-6">
         <v-row class="pa-4">
           <v-img src="../assets/RSWP_Logo_Horizontal_Inverse.svg" max-width="250" height="auto" />
         </v-row>
@@ -18,13 +18,13 @@
           <a href="https://github.com/rswp-org" target="_blank">
             <img src="../assets/github.svg" class="icon mx-1" />
           </a>
-          <a href="https://instagram.com" target="_blank">
+          <a href="https://www.instagram.com/rswp_org" target="_blank">
             <img src="../assets/instagram.svg" class="icon mx-1" />
           </a>
           <a href="https://www.linkedin.com/company/rural-schools-water-project" target="_blank">
             <img src="../assets/linkedin.svg" class="icon mx-1" />
           </a>
-          <a href="https://youtube.com" target="_blank">
+          <a href="https://www.youtube.com/@rswp-org" target="_blank">
             <img src="../assets/youtube.svg" class="icon mx-1" />
           </a>
         </v-row>

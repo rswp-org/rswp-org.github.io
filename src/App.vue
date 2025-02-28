@@ -4,6 +4,14 @@
 
   <v-divider class="ma-10" style="opacity: 0%;" ></v-divider>
 
+  <rss></rss>
+
+  <v-divider class="ma-10" style="opacity: 0%;" ></v-divider>
+
+  <rainwater></rainwater>
+
+  <v-divider class="ma-10" style="opacity: 0%;" ></v-divider>
+
   <story></story>
 
   <v-divider class="ma-10" style="opacity: 0%;" ></v-divider>
@@ -28,6 +36,16 @@ import foot from "./components/footer.vue"
 import story from "./components/Story.vue"
 import newsletter from "./components/Newsletter.vue"
 import team from "./components/Team.vue"
+import rss from './components/rss.vue';
+</script>
+
+<script>
+  export default {
+    name: 'App',
+    components: {
+      rss
+    }
+  };
 </script>
 
 <style>
@@ -78,6 +96,13 @@ h3,h6 {
 }
 
 p {
+  margin: 0;
+  font-family: ProximaNova-Regular;
+  color: #2c2c2c;
+  text-align: justify;
+}
+
+ul {
   margin: 0;
   font-family: ProximaNova-Regular;
   color: #2c2c2c;

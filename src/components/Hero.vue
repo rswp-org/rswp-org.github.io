@@ -1,36 +1,55 @@
 <template>
   <v-container class="hero">
-    <v-row class="ma-0" style="height: 52%; justify-content: space-evenly;" cols="3"  >
-      <v-col style="height: 100%; max-width: 33%;" >
-        <img class="img" src="../assets/RSWP_Logo_Horizontal_Inverse.svg"></img>
-      </v-col>
-      <v-col style="height: 100%; max-width: 25%;">
+    <v-row class="ma-2" style="height: 55%; justify-content: space-between;" cols="2"  >
+      <v-col md="6" class="pa-6">
         <v-row class="pa-4">
-          <v-btn class="text-none" color="#00aeef" style="margin: auto; min-width:33%" rounded><a href="#give">give</a></v-btn>
+        <v-img src="../assets/RSWP_Logo_Horizontal_Inverse.svg" max-width="300" height="auto" />
         </v-row>
       </v-col>
-      <v-col style="height: 100%; max-width: 33%;">
-        <v-row style="justify-content: right;" class="pa-4">
-        <li style="text-align: right;  list-style-type: none; vertical-align: top;">
+      <v-col md="6" class="pa-6">
+        <v-row class="justify-end pa-4">
+          <!-- Social Links -->
           <a href="https://github.com/rswp-org" target="_blank">
-            <img style="width: 40px" src="../assets/github.svg" class="icon mx-1" />
+            <img
+              style="width: 40px; height: 40px;" 
+              src="../assets/github.svg" 
+              class="icon mx-1" 
+            />
           </a>
-          <a href="https://instagram.com" target="_blank">
-            <img style="width: 40px" src="../assets/instagram.svg" class="icon mx-1" />
+          <a href="https://www.instagram.com/rswp_org" target="_blank">
+            <img
+              style="width: 40px; height: 40px;" 
+              src="../assets/instagram.svg" 
+              class="icon mx-1" 
+            />
           </a>
           <a href="https://www.linkedin.com/company/rural-schools-water-project" target="_blank">
-            <img style="width: 40px" src="../assets/linkedin.svg" class="icon mx-1" />
+            <img
+              style="width: 40px; height: 40px;" 
+              src="../assets/linkedin.svg" 
+              class="icon mx-1" 
+            />
           </a>
-          <a href="https://youtube.com" target="_blank">
-            <img style="width: 40px;" src="../assets/youtube.svg" class="icon mx-1" />
+          <a href="https://www.youtube.com/@rswp-org" target="_blank">
+            <img
+              style="width: 40px; height: 40px;" 
+              src="../assets/youtube.svg" 
+              class="icon mx-1" 
+            />
           </a>
-        </li>
+        </v-row>
+        <v-row class="justify-end pa-4">
+          <v-btn class="text-none" color="#00aeef" style="min-height: 40px; width: 192px;" rounded><a href="#give">give</a></v-btn>
         </v-row>
       </v-col>
     </v-row>
-    <v-row class="ma-0 pa-4" style="height: 48%;">
-      <v-col style="height: 100%; min-width: 25%; justify-content: right; align-content: center;">
-        <p style="align-items: end; color: white; text-align: right"> <span class="highlight"> We are a small charity using data and technology to build solutions for schools and communities facing water crises.</span><br><br><span class="highlight">We’ve built 6 school water systems in Uganda since 2017—and we’re just getting started.</span></p>
+    <v-row class="ma-0 pa-4" style="height: 45%;">
+      <v-col class="d-flex flex-column justify-start" style="height: 100%; min-width: 25%;">
+        <h2 style="color: white; text-align: center">
+          <span class="highlight">
+          We use data and technology to support schools and communities facing water crises.
+          </span>
+        </h2>
       </v-col>
     </v-row>
   </v-container>
@@ -45,6 +64,7 @@
   height: 100vh;
   max-width: 100%;
   object-fit: cover;
+  padding: 1rem;
 }
 
 .img {
@@ -53,7 +73,7 @@
 
 .highlight {
   background-color: rgba(0, 174, 239, 0.8);
-
+  font-family: ProximaNova-Bold;
 }
 
 </style>
