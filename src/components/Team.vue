@@ -21,7 +21,7 @@
             </v-row>
             <v-row class="d-flex justify-center">
                 <v-col cols="12" md="6" lg="6" class="pa-8">
-                <v-card class="custom-card">
+                <v-container class="custom-card">
                     <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
@@ -48,11 +48,11 @@
                             </v-row>
                         </v-col>
                     </v-row>    
-                </v-card>
+                </v-container>
                 </v-col>
 
                 <v-col cols="12" md="6" lg="6" class="pa-8">
-                <v-card class="custom-card">
+                <v-container class="custom-card">
                     <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
@@ -79,10 +79,10 @@
                             </v-row>
                         </v-col>
                     </v-row>    
-                </v-card>
+                </v-container>
                 </v-col>
                 <v-col cols="12" md="6" lg="6" class="pa-8">
-                <v-card class="custom-card">
+                <v-container class="custom-card">
                     <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
@@ -106,10 +106,10 @@
                             </v-row>
                         </v-col>
                     </v-row>    
-                </v-card>
+                </v-container>
                 </v-col>
                 <v-col cols="12" md="6" lg="6" class="pa-8">
-                <v-card class="custom-card">
+                <v-container class="custom-card">
                     <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
@@ -133,10 +133,10 @@
                             </v-row>
                         </v-col>
                     </v-row>    
-                </v-card>
+                </v-container>
                 </v-col>
                 <v-col cols="12" md="6" lg="6" class="pa-8">
-                <v-card class="custom-card">
+                <v-container class="custom-card">
                     <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
@@ -163,7 +163,7 @@
                             </v-row>
                         </v-col>
                     </v-row>    
-                </v-card>
+                </v-container>
                 </v-col>
             </v-row>
             <v-row class="justify-center align-center">
@@ -171,7 +171,7 @@
             </v-row>
             <v-row class="d-flex justify-center">
                 <v-col cols="12" md="6" lg="6" class="pa-8">
-                <v-card class="custom-card">
+                <v-container class="custom-card">
                     <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
@@ -195,11 +195,11 @@
                             </v-row>
                         </v-col>
                     </v-row>    
-                </v-card>
+                </v-container>
                 </v-col>
 
                 <v-col cols="12" md="6" lg="6" class="pa-8">
-                <v-card class="custom-card">
+                <v-container class="custom-card">
                     <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
@@ -223,10 +223,10 @@
                             </v-row>
                         </v-col>
                     </v-row>    
-                </v-card>
+                </v-container>
                 </v-col>
                 <v-col cols="12" md="6" lg="6" class="pa-8">
-                <v-card class="custom-card">
+                <v-container class="custom-card">
                     <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
@@ -250,10 +250,10 @@
                             </v-row>
                         </v-col>
                     </v-row>    
-                </v-card>
+                </v-container>
                 </v-col>
                 <v-col cols="12" md="6" lg="6" class="pa-8">
-                <v-card class="custom-card">
+                <v-container class="custom-card">
                     <v-row cols="2" class="align-center">
                         <!-- Profile Image Column -->
                         <v-col class="d-flex justify-center align-center">
@@ -280,7 +280,7 @@
                             </v-row>
                         </v-col>
                     </v-row>    
-                </v-card>
+                </v-container>
                 </v-col>
             </v-row>
         </v-card>

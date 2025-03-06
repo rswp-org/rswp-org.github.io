@@ -45,9 +45,10 @@
     </v-row>
     <v-row class="ma-0 pa-4" style="height: 45%;">
       <v-col class="d-flex flex-column justify-start" style="height: 100%; min-width: 25%;">
-        <h2 style="color: white; text-align: center">
+        <h2 style="color: white; text-align: center; font-family: ProximaNova-Bold">
+          We use data and technology to support schools and communities facing 
           <span class="highlight">
-          We use data and technology to support schools and communities facing water crises.
+          water crises
           </span>
         </h2>
       </v-col>
@@ -58,8 +59,8 @@
 <style scoped>
 
 .hero {
-  align: center;
-  background: url("../assets/rswp_hero _bw_flip.JPG") center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url("../assets/rswp_hero _bw_flip.JPG") center fixed;
   background-size: cover;
   height: 100vh;
   max-width: 100%;
@@ -69,11 +70,6 @@
 
 .img {
    position: relative;
-}
-
-.highlight {
-  background-color: rgba(0, 174, 239, 0.8);
-  font-family: ProximaNova-Bold;
 }
 
 </style>
